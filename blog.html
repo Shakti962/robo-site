@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/795131a83d.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap-Link -->
+    <link rel="stylesheet" href="plugins/bootstrap.min.css">
+    <!-- Css-Link -->
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <nav class="px-md-3  navbar navbar-expand-lg fixed-top">
+        <a class="navbar-brand" href="index.html">
+<!--            <img class="logo" src="svgs/logo.svg" alt="">-->
+            <b>LOgo</b>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" onclick="openNav()"><img class="nav-img" src="svgs/nav-icon.svg" alt=""></span>
+        </button>
+        <div id="sideNav" class="side-nav d-inline d-lg-none ms-auto" onclick="closeNav()">
+            <div class="closebtn mb-5" ><i class="color-yellow fas fa-times" onclick="closeNav()"></i></div>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item px-3"><a class="nav-link navbar-link" href="index.html">Home</a></li>
+                <li class="nav-item px-3" onclick="addPadding('skill')"><a class="nav-link navbar-link" href="index.html#skill">Skill</a></li>
+                <li class="nav-item px-3" onclick="addPadding('news')"><a class="nav-link navbar-link" href="index.html#news">News</a></li>
+                <li class="nav-item px-3"><a class="nav-link navbar-link" href="#about">About us</a></li>
+                <li class="nav-item px-3"><a class="nav-link active" href="blog.html">Blog</a></li>
+                <li class="nav-item px-3"><a class="nav-link navbar-link" href="login.html">Login</a></li>
+            </ul>
+        </div>
+        <div class="d-none d-lg-inline ms-auto">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item px-3"><a class="nav-link navbar-link" href="index.html">Home</a></li>
+                <li class="nav-item px-3" onclick="addPadding('skill')"><a class="nav-link navbar-link" href="index.html#skill">Skill</a></li>
+                <li class="nav-item px-3" onclick="addPadding('news')"><a class="nav-link navbar-link" href="index.html#news">News</a></li>
+                <li class="nav-item px-3"><a class="nav-link navbar-link" href="#about">About us</a></li>
+                <li class="nav-item px-3"><a class="nav-link active" href="blog.html">Blog</a></li>
+                <li class="nav-item px-3"><a class="nav-link navbar-link" href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="main" class="w-100 mt-5 overflow-hidden">
+        <div class="row p-5 position-relative">
+            <div class="col-lg-5 main-text shadow-lg col-md-12 p-3">
+                <h1 class="d-inline-block">BLOGS</h1><br>
+                <b>Get Updated From Every News</b>
+            </div>
+            <div class="car-container col-lg-6">
+                <img class="robo-img position-absolute" src="images/blog-main.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="blog-main" class="w-100">
+        <div class="blog-content p-4 px-5">
+            <h1 class="blog-title mb-3">Astrobotic bids for Masten Space Systems assets</h1>
+            <p class="text-center"><b>WASHINGTON</b></p>
+            <p>Astrobotic Technology, a lunar lander developer, has made a formal bid for “substantially all” of the assets of Masten Space Systems, another lander company that filed for Chapter 11 bankruptcy last month.
+                <br>
+                In a filing with the U.S. Bankruptcy Court for Delaware Aug. 14, Masten said it received a “stalking horse” bid of $4.2 million for Masten’s assets, including a SpaceX launch credit worth $14 million, from Astrobotic. The agreement, in effect, sets a minimum price for the sale of those assets but does not prevent Masten from seeking higher bids through an auction process that runs through early September.
+            </p>
+            <p class="text-center"><b>Masten financial woes</b></p>
+            <p>
+                The filing also outlines in greater detail the series of events that led Masten to file for Chapter 11 bankruptcy in July. The company had, over the years, demonstrated its technical capabilities with its VTVL vehicles, but “from a business perspective, the company was less successful financially,” the filing notes.
+                <br>
+                The company, with less than 25 employees for much of its history, had to scale up when it won its CLPS award in April 2020. That created “financial pressures from which the company could not recover,” the filing states, further complicated by the pandemic.
+                <br>
+                In late 2021, the company tried to raise $60 million but failed to find much interest, which it blamed on being late to the market. “When the Debtor entered the market late in the year, many investors interested in making substantial investments in space companies had already done so.”
+            </p>
+            <p class="text-center"><b>Uncertain future</b></p>
+            <p>
+                Masten’s bankruptcy filing and potential sale of its assets raise doubts about the future of both its lunar lander program for CLPS and the VTVL flights, which NASA uses through its Flight Opportunities program.
+                <br>
+                NASA CLPS officials said shortly after the Chapter 11 filing that, if Masten was unable to carry out its CLPS task order, they would consider either reassigning the payloads intended to fly on that lander on other missions, or compete a new task order. They added, though, they had not made any decisions yet because they had not been formally notified by Masten that it will be unable to fulfill its task order.
+                <br>
+                The same is true for Masten’s work with the Flight Opportunities program. “We still have task orders with them,” said John Kelly, NASA Flight Opportunities program manager, during a NASA town hall meeting Aug. 8 at the Small Satellite Conference in Logan, Utah. “We will wait and see what happens.”
+            </p>
+        </div>
+    </section>
+    <div class="divider row text-center overflow-hidden p-3 w-100">
+        <hr class="col-lg-5 my-auto">
+        <h3 class="col-lg-2">More Blogs</h3>
+        <hr class="col-lg-5 my-auto">
+    </div>
+    <section id="news" class="w-100 overflow-hidden">
+        <div class="row skew-div skew-div1 mt-4">
+            <div class="col-6 position-absolute news-title">
+                <h1>The American space agency Nasa is rolling out its giant new Moon rocket..</h1>
+            </div>
+            <img class="col" src="images/blog1.jpg" alt="">
+        </div>
+        <div class="row skew-div skew-div2 mt-4">
+            <div class="col-6 position-absolute news-title">
+                <h1>Major chemical database investigates hundreds of suspicious crystal</h1>
+            </div>
+            <img class="col" src="images/blog2.jpg" alt="">
+        </div>
+    </section>
+    <div class="divider row text-center overflow-hidden p-3 pt-5 w-100">
+        <hr class="col-lg-5 my-auto">
+        <h3 class="col-lg-2">About Us</h3>
+        <hr class="col-lg-5 my-auto">
+    </div>
+    <section id="about" class="m-3 my-4 overflow-hidden text-center">
+        <div class="row">
+            <div class="col-lg-6 py-3">
+                <b class="m-md-4">COMPANY</b>
+                <b class="m-md-4">CAREERS</b>
+                <b class="m-md-4">MEDIA CENTER</b>
+                <b class="m-md-4">PRIVACY & LEGAL</b>
+            </div>
+            <div class="col-lg-6 py-2">
+                <i class="fab fa-twitter footer-icon mx-4"></i>
+                <i class="fab fa-facebook-f footer-icon mx-4"></i>
+                <i class="fab fa-instagram footer-icon mx-4"></i>
+            </div>
+            <div class="end-line col-lg-6 m-md-4">
+                <p>Copyright © 2022 Padmanabh Innovation</p>
+                <p>No. 29, Beratena Agrahara, Next to Play Factory, Hosur Main Road, Electronic City Post, Bangalore</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- JS Work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="plugins/bootstrap.bundle.min.js" charset="utf-8"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,294 @@
+body{
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+}
+a, a:hover{
+    color: #000;
+    text-decoration: none;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+/*Divider*/
+.not-ready{
+  display: none;
+}
+.divider{
+    color: #73777B;
+    margin: 0;
+}
+.divider hr{
+    height: 2px;
+}
+/*NavBar*/
+nav{
+    margin: 0;
+    background-color: white;
+    color: #000;
+}
+.side-nav .closebtn{
+    display: none;
+}
+.logo{
+    width: 150px;
+}
+.nav-img{
+    width: 43px;
+}
+.navbar-link{
+    padding: 8px;
+    transition-duration: 0s !important;
+}
+.navbar-link:hover{
+    background-color: #000;
+    color: #fff;
+    padding: 8px;
+    border-radius: 15px;
+}
+.active{
+    background-color: #000;
+    color: #fff;
+    padding: 8px;
+    border-radius: 15px;
+}
+.active:hover{
+    color: #fff;
+}
+/*Main Section*/
+#main{
+  height: 95vh;
+}
+.robo-img{
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -10;
+}
+.main-text{
+  margin: 420px 20px;
+  color: #fff;
+}
+.main-btn{
+    border: 1px solid #fff;
+    border-radius: 20px;
+    color: white;
+    padding: 8px 20px;
+    margin: 10px 20px 10px 0;
+}
+.main-btn:hover {
+    color: white;
+}
+.main-btn1{
+    background-color: #f6ce42;
+    border: none;
+    color: #1a1e21;
+}
+.main-btn1:hover {
+    color: #1a1e21;
+}
+
+#skill, #news{
+  transition: 1s ease all;
+}
+.skew-div{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 23px;
+    color: #fff;
+    height: 100%;
+    margin: 0 60px;
+}
+.skew-div img{
+    padding: 0 !important;
+}
+.skew-div1:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    background: #1A1E21E5;
+    transform-origin: 100% 0;
+    transform: skew(-33deg);
+    z-index: 10;
+}
+.skew-div2:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    background: #1A1E21E5;
+    transform-origin: 100% 0;
+    transform: skew(33deg);
+    z-index: 10;
+}
+.news-title{
+    z-index: 11;
+}
+.skew-div:nth-child(even) .news-title{
+    right: 0;
+}
+.news-title h1{
+    cursor: pointer;
+    font-size: 50px;
+    margin: 50px;
+}
+/*Products-Section*/
+.product{
+    /*border: 2px solid grey;*/
+    transition: 1s ease all;
+}
+.product:hover hr{
+  margin-left: 3px !important;
+  margin-right: 3px !important;
+  transition: 500ms ease all;
+}
+
+/*About Us*/
+.end-line{
+    word-spacing: 2px;
+    font-size: 15px;
+}
+/*blog.html*/
+#blog-main{
+    margin-top: 62px;
+}
+.blog-img h1 span{
+    color: #ecb200;
+}
+.blog-title{
+    text-align: center;
+    font-size: 40px;
+}
+/*Login.html*/
+input{
+    border: none;
+    outline: none;
+    color: #fff;
+    border-bottom: 1px solid #000;
+}
+.login-btn{
+    border: 1px solid #000;
+    background-color: black;
+    border-radius: 20px;
+    color: #fff;
+    padding: 8px 20px;
+    margin: 30px 20px 10px 0;
+}
+.login-btn:hover{
+    background-color: #fff;
+    color: #1a1e21;
+}
+/***************** For Smallest Device *******************/
+/***************** For Mobile Device *******************/
+@media only screen and (max-width: 600px) {
+    nav{
+        margin: 0;
+    }
+    .nav-img{
+        width: 25px;
+        padding-top: 10px;
+    }
+    #main div{
+        position: static;
+    }
+    .main-btn{
+        width: 100%;
+    }
+    .robo-img{
+      margin-top: 200px;
+      height: 60vh;
+    }
+    #about div div b{
+        display: block;
+    }
+    .news-title h1{
+        font-size: 20px;
+        margin: 10px;
+    }
+    /*blog.html*/
+    /*login.html*/
+    .login-block{
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .login-block div input{
+        width: 100% !important;
+    }
+}
+/***************** For Tablet Device *******************/
+@media only screen and (max-width: 991px) and (min-width: 601px){
+    .car-img{
+        margin-left: -60px;
+        width: 1500px;
+    }
+    .blog-title{
+        top: 360px;
+    }
+    .news-title h1{
+        font-size: 40px;
+    }
+}
+/***************** For Both Mobile & Tablet Device *******************/
+@media only screen and (max-width: 991px){
+  .not-ready{
+    display: block;
+  }
+  .main{
+    display: none;
+  }
+    .navbar-link:hover{
+        background-color: #1a1e21;
+        color: #fff;
+        padding: 8px 0;
+    }
+    .side-nav{
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        text-align:center;
+    }
+    .side-nav .closebtn{
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 26px;
+        margin-left: 50px;
+    }
+    .active{
+        border-radius: 0;
+    }
+    .login-block div input{
+        text-align: center;
+    }
+    @keyframes animation {
+        0% {
+            margin-left: 650px;
+        }
+        100% {
+            margin-left: -60px;
+        }
+    }
+    .login-img{
+        width: 150px;
+    }
+
+    .blog-title{
+        font-size: 30px;
+    }
+}
